@@ -1,3 +1,6 @@
 # DEV and Play Site 
-Using Atom, with GitHub Action pipeline deploying to Azure Static Webapp --> https://orange-plant-09859280f.1.azurestaticapps.net/
+
+dev and practice site for LinkedIn Learning course - Full Stack Developer
+
+Using Atom, with GitHub actions pipeline deploying to Azure tatic Webapp --> https://orange-plant-09859280f.1.azurestaticapps.net/
 
