@@ -26,5 +26,7 @@ h2{
 
 }
 .siteFooter{
-  
+  text-align: center;
+  text-decoration: italic;
+  color: darkgray;
 }
