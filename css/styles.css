@@ -1,7 +1,7 @@
 body{
   margin: 0;
   padding: 0;
-  font-family: 'Square Peg', cursive;
+  /* font-family: 'Square Peg', cursive; */
 }
 h1{
   /* color: blue; */
@@ -52,8 +52,8 @@ p{
 }
 .siteFooter{
   text-align: center;
-  color: #CED3DC;
-  background-color: #2E0219;
+  /* color: #CED3DC; */
+  /* background-color: #2E0219; */
   margin: 0;
   padding: 10px;
 }
