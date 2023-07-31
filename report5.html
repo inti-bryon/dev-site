@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern HTML Dashboard</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    .dashboard-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .dashboard-section {
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      min-height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .m365-section {
+      background-color: #d1e5f0; /* Light blue pastel */
+      color: #003f5c;
+    }
+
+    .progress-section {
+      background-color: #d5ecd2; /* Light green pastel */
+      color: #005a32;
+    }
+
+    .roadmap-section {
+      background-color: #ffdfc3; /* Light orange pastel */
+      color: #b36b00;
+    }
+
+    .coming-soon-section {
+      background-color: #eaeaea; /* Light gray pastel */
+      color: #4d4d4d;
+    }
+
+    /* Example style for a modern button */
+    .dashboard-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #0078d4;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .dashboard-button:hover {
+      background-color: #005ea3;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard-container">
+
+    <!-- M365 G5 Migration Section -->
+    <div class="dashboard-section m365-section">
+      <h2>M365 G5 Migration</h2>
+      <p>This section contains information about the M365 G5 migration process.</p>
+      <button class="dashboard-button">Learn More</button>
+    </div>
+
+    <!-- Unified Progress Section -->
+    <div class="dashboard-section progress-section">
+      <h2>Unified Progress</h2>
+      <p>Track the unified progress of your projects and tasks.</p>
+      <button class="dashboard-button">View Progress</button>
+    </div>
+
+    <!-- Roadmap Section -->
+    <div class="dashboard-section roadmap-section">
+      <h2>Roadmap</h2>
+      <p>Discover the exciting roadmap ahead for your organization.</p>
+      <button class="dashboard-button">Explore Roadmap</button>
+    </div>
+
+    <!-- Coming Soon Section -->
+    <div class="dashboard-section coming-soon-section">
+      <h2>Coming Soon</h2>
+      <p>Stay tuned for upcoming features and announcements.</p>
+      <button class="dashboard-button">Stay Updated</button>
+    </div>
+
+  </div>
+</body>
+</html>
