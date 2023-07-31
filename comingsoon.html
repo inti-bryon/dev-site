@@ -12,14 +12,11 @@
     <div class="coming-soon-title">
       <h1>Latest News from Microsoft</h1>
     </div>
-
-    <!-- Coming Soon Content -->
-    <div class="coming-soon-content">
-      <div class="newsfeed-container">
-        <!-- Embedded MSN newsfeed using iframe -->
-        <iframe class="newsfeed-iframe" src="https://www.msn.com/en-us/news" title="Microsoft Newsfeed"></iframe>
-      </div>
-    </div>
+    <div class="rss-container">
+    <!-- RSS Feed Content -->
+    <div id="rss-feed"></div>
+  </div>
+    
   </div>
       <!-- Home Button -->
       <div class="home-button-section">
@@ -30,5 +27,34 @@
       <div class="dashboard-footer">
         <p>&copy; 2023 Microsoft. All rights reserved.</p>
       </div>
+    <script>
+    // Fetch the RSS feed data using JavaScript
+    fetch('https://feeds.msn.com')
+      .then(response => response.text())
+      .then(data => {
+        const parser = new DOMParser();
+        const xml = parser.parseFromString(data, 'application/xml');
+
+        const rssFeedDiv = document.getElementById('rss-feed');
+
+        const items = xml.querySelectorAll('item');
+        items.forEach(item => {
+          const title = item.querySelector('title').textContent;
+          const description = item.querySelector('description').textContent;
+          const link = item.querySelector('link').textContent;
+
+          const rssItemDiv = document.createElement('div');
+          rssItemDiv.className = 'rss-item';
+          rssItemDiv.innerHTML = `
+            <h2 class="rss-item-title">${title}</h2>
+            <p class="rss-item-description">${description}</p>
+            <a class="rss-item-link" href="${link}" target="_blank">Read more</a>
+          `;
+
+          rssFeedDiv.appendChild(rssItemDiv);
+        });
+      })
+      .catch(error => console.error('Error fetching RSS feed:', error));
+  </script>
 </body>
 </html>
