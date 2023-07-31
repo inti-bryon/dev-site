@@ -82,3 +82,97 @@ body {
   .dashboard-button:hover {
     background-color: #005ea3;
   }
+
+  .progress-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .progress-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .progress-title h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0078d4;
+  }
+
+  .progress-content {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  .coming-soon-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .coming-soon-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .coming-soon-title h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0078d4;
+  }
+
+  .coming-soon-content {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  .migration-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .migration-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .migration-title h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0078d4;
+  }
+
+  .migration-content {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  .roadmap-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .roadmap-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .roadmap-title h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0078d4;
+  }
+
+  .roadmap-content {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
