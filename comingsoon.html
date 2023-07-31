@@ -32,7 +32,7 @@
     fetch('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fnews.microsoft.com%2Ffeed%2F')
       .then(response => response.json())
       .then(data => {
-        const itemsArray = data.items; // Extract the "Items" field from the JSON object
+        const itemsArray = data.items; // Extract the "items" field from the JSON object
 
         // Check if itemsArray is defined and an array
         if (itemsArray && Array.isArray(itemsArray)) {
