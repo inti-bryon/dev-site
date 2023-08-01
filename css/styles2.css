@@ -116,6 +116,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    background-color: #d1e5f0;
   }
 
   .coming-soon-title {
@@ -139,6 +140,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    background-color: #d1e5f0;
   }
 
   .migration-title {
@@ -162,6 +164,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    background-color: #d1e5f0;
   }
 
   .roadmap-title {
