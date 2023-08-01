@@ -48,7 +48,7 @@ body {
   }
 
   .m365-section {
-    background-color: #d1e5f0; /* Light blue pastel */
+    background-color: #f9b3b3; /* Light red pastel */
     color: #003f5c;
   }
 
@@ -58,12 +58,12 @@ body {
   }
 
   .roadmap-section {
-    background-color: #ffdfc3; /* Light orange pastel */
+    background-color: #d1e5f0; /* Light blue pastel ffdfc3 */
     color: #b36b00;
   }
 
   .coming-soon-section {
-    background-color: #eaeaea; /* Light gray pastel */
+    background-color: #f6f7bb; /* Light gray pastel */
     color: #4d4d4d;
   }
 
