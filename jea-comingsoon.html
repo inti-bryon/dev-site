@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles2.css">
+  <title>Latest News from Microsoft</title>
+</head>
+<body>
+  <div class="coming-soon-container">
+    <!-- Coming Soon Title -->
+    <div class="coming-soon-title">
+      <h1>Latest News from Microsoft</h1>
+    </div>
+    <div class="migration-content">
+    <!-- RSS Feed Content from https://news.microsoft.com/feed/ -->
+    <div id="data-container"></div>
+  </div>
+    
+  </div>
+      <!-- Home Button -->
+      <div class="home-button-section">
+       <a href="report5.html"><button class="dashboard-button">Home</button></a>
+      </div>
+  
+      <!-- Footer -->
+      <div class="dashboard-footer">
+        <img src="microsoft-logo.png" width="200px"> 
+        <p>&copy; 2023 Microsoft. All rights reserved.</p>
+      </div>
+    <script>
+    // Fetch data from the API
+    fetch('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fnews.microsoft.com%2Ffeed%2F')
+      .then(response => response.json())
+      .then(data => {
+        const itemsArray = data.items; // Extract the "items" field from the JSON object
+
+        // Check if itemsArray is defined and an array
+        if (itemsArray && Array.isArray(itemsArray)) {
+          // Create elements to display the data
+          const dataContainer = document.getElementById('data-container');
+          itemsArray.forEach(item => {
+            const title = item.title;
+            const date = item.pubDate;
+            const description = item.content;
+
+            const itemDiv = document.createElement('div');
+            itemDiv.innerHTML = `
+              <h2>${title}</h2>
+              <p>Date: ${date}</p>
+              <p>${description}</p>
+              <hr>
+            `;
+
+            dataContainer.appendChild(itemDiv);
+          });
+        } else {
+          // Handle the case when "Items" field is missing or not an array
+          const errorMessage = document.createElement('p');
+          errorMessage.textContent = 'Error: Unable to fetch data from the API.';
+          const dataContainer = document.getElementById('data-container');
+          dataContainer.appendChild(errorMessage);
+        }
+      })
+      .catch(error => console.error('Error fetching data:', error));
+  </script>
+</body>
+</html>
